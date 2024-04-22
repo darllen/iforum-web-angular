@@ -1,0 +1,24 @@
+@import "../../../styles/variables.scss";
+
+.input-wrapper{
+  color: $blue-100;
+  text-align: start;
+  font-size: 16px;
+
+  input{
+    border: none;
+    border-bottom: 1px solid $blue-100;
+    background: transparent;
+    border-radius: 0;
+    width: 100%;
+    padding: 12px 0 12px 15px;
+    color: $blue-100;
+    font-size: 16px;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+}
+
+

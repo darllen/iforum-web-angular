@@ -1,0 +1,15 @@
+<main>
+  <section class="main-section"></section>
+
+  <section class="form-section">
+    <img src="/assets/svg/logo.svg" />
+
+    <ng-content></ng-content>  <!-- O form com os dois inputs -->
+
+    <div class="btn-wrapper">
+      <button (click)="submit()">{{ btnText }}</button>
+      <a href="">{{ linkTextForgotPassword }}</a> 
+      <a href="" (click)="navigate()">{{ linkTextSingUp }}</a> 
+    </div>
+  </section>
+</main>
