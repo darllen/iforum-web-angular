@@ -1,12 +1,13 @@
-<app-default-login-layout 
-  btnText="Entrar" 
-  linkTextForgotPassword="Esqueceu a senha? Recuperar senha" 
+<app-default-login-layout
+  btnText="Entrar"
+  linkTextForgotPassword="Esqueceu a senha? Recuperar senha"
   linkTextSingUp="Cadastre-se"
   (submit)="submit()"
   (navigate)="navigate()"
+  [disabledBtn]="!loginForm.valid"
   >
   <form [formGroup]="loginForm">
-    <app-primary-input 
+    <app-primary-input
     formControlName="email"
     inputName="email"
     type="email"
@@ -15,7 +16,7 @@
     >
     </app-primary-input>
 
-    <app-primary-input 
+    <app-primary-input
       formControlName="password"
       inputName="password"
       type="password"

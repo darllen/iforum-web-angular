@@ -11,6 +11,7 @@ export class DefaultLoginLayoutComponent {
   @Input() btnText: string = "";
   @Input() linkTextForgotPassword: string = "";
   @Input() linkTextSingUp: string = "";
+  @Input() disabledBtn: boolean = true;
   @Output("submit") onSubmit = new EventEmitter();
   @Output("navigate") onNavigate = new EventEmitter();
 
