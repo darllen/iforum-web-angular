@@ -1,0 +1,37 @@
+<app-default-login-layout
+  btnText="Criar conta"
+  linkText="Já tenho uma conta"
+  (submit)="submit()"
+  (navigate)="navigate()"
+  [disabledBtn]="!signupForm.valid"
+  >
+  <form [formGroup]="signupForm">
+    <app-primary-input
+    formControlName="name"
+    inputName="name"
+    type="text"
+    label="Nome"
+    placeholder="seunomeaqui"
+    >
+    </app-primary-input>
+
+    <app-primary-input
+    formControlName="email"
+    inputName="email"
+    type="email"
+    label="E-mail"
+    placeholder="exemplo@exemplo.com"
+    >
+    </app-primary-input>
+
+    <app-primary-input
+      formControlName="password"
+      inputName="password"
+      type="password"
+      label="Senha"
+      placeholder="Sua senha aqui"
+    >
+    </app-primary-input>
+
+  </form>
+</app-default-login-layout>

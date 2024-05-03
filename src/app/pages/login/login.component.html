@@ -1,18 +1,18 @@
 <app-default-login-layout
-  btnText="Entrar"
-  linkTextForgotPassword="Esqueceu a senha? Recuperar senha"
-  linkTextSingUp="Cadastre-se"
-  (submit)="submit()"
-  (navigate)="navigate()"
-  [disabledBtn]="!loginForm.valid"
+    btnText="Entrar"
+    linkTextForgotPassword="Esqueceu a senha? Recuperar senha"
+    linkText="Criar uma conta"
+    (submit)="submit()"
+    (navigate)="navigate()"
+    [disabledBtn]="!loginForm.valid"
   >
   <form [formGroup]="loginForm">
     <app-primary-input
-    formControlName="email"
-    inputName="email"
-    type="email"
-    label="E-mail"
-    placeholder="exemplo@exemplo.com"
+      formControlName="email"
+      inputName="email"
+      type="email"
+      label="E-mail"
+      placeholder="exemplo@exemplo.com"
     >
     </app-primary-input>
 

@@ -10,7 +10,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 export class DefaultLoginLayoutComponent {
   @Input() btnText: string = "";
   @Input() linkTextForgotPassword: string = "";
-  @Input() linkTextSingUp: string = "";
+  @Input() linkText: string = "";
   @Input() disabledBtn: boolean = true;
   @Output("submit") onSubmit = new EventEmitter();
   @Output("navigate") onNavigate = new EventEmitter();
